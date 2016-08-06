@@ -1,0 +1,11 @@
+*~
+*.swp
+*.swo
+.netrwhist
+
+# Skip 'plugged' directory, used plugins are defined in the vimrc.
+# Use :PlugStatus to show missing ones and PlugInstall to install them. 
+# No need to have these in git.
+plugged/
+
+view/
