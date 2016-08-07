@@ -1,5 +1,5 @@
 set nu
-set rnu 
+set rnu
 set showcmd
 set hlsearch
 set wrap
@@ -26,13 +26,15 @@ au FocusGained * :set rnu "TODO: fix the delay on this...
 autocmd InsertEnter * :set nornu
 autocmd InsertLeave * :set rnu 
 
+
 """"""""""""
 " MAPPINGS "
 """"""""""""
 
 map <F7> :tabp <CR>
+map <C-F7> :tabm -<CR>
 map <F8> :tabn <CR>
-nmap <C-h> :nohl<CR>
+map <C-F8> :tabm +<CR>
 " fixing some unutilized parts of the scandinavian keyboard (TODO: make this depend on keyboard layout?)
 map å ^
 map ¤ $
@@ -51,6 +53,10 @@ else " no gui
   endif
 endif
 
+
+"""""""""""
+" PLUGINS "
+"""""""""""
 
 call plug#begin('~/.vim/plugged')
  Plug 'lervag/vimtex', {'for': ['tex', 'plaintex']} " TODO: for plaintex as well (?)
