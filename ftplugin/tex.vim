@@ -14,10 +14,8 @@ vnoremap <buffer> <C-i> `>a}`<i\emph{lviB
 onoremap <buffer> <silent> i$ :<c-u>normal! T$vt$<cr>
 "autocmd Filetype tex,latex,plaintex vnoremap <buffer> i$ T$ot$
 "TODO: dollar sign things, see http://stackoverflow.com/a/35042848/5208725
-"vnoremap <buffer> $$ ??? " <- surround by $
-" awaiting answer from stackexchange... http://stackoverflow.com/questions/38853584/vim-remap-dollar-sign-in-insert-mode
-"inoremap <buffer> $ $$i
-"let g:AutoClosePairs_add = "$" " this doesn't work as the plugin doesn't get loaded per buffer.
+"vnoremap <buffer> $$ ??? " <- surround by $
+inoremap <buffer> $ $$i
 
 " math related shortcuts
 " TODO: look up other handy ones in texstudio settings.
