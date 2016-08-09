@@ -59,7 +59,6 @@ endif
 " pressing enter when the autocomplete menu is open just selects the option.
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-
 """""""""""
 " PLUGINS "
 """""""""""
@@ -70,16 +69,16 @@ call plug#end() "
 
 "autocmd BufNewFile,BufRead *.html source ~/.vim/ftplugin/
 
-" TODO: figure out which of these two to use...
+" TODO: figure out which of these to use...
 filetype indent plugin on
 "filetype plugin on
 
 " this is already done by filetype indent plugin on i think?
 "autocmd FiletType python setlocal expandtab smarttab shiftwidth=2 tabstop=2
 
-" LaTeX specifig bindings (TODO: move to .vim/after/filetype/tex.vim ?)
-" TODO: fix for windows
-source $HOME/.vim/tex-bindings.vim
+" LaTeX specifig options
+" see: ftplugin/tex.vim
+let g:tex_flavor = "latex"
 
 " Set up colos for folding
 hi FoldColumn ctermbg=none ctermfg=cyan
