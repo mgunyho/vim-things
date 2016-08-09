@@ -56,6 +56,9 @@ else " no gui
   endif
 endif
 
+" pressing enter when the autocomplete menu is open just selects the option.
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
 
 """""""""""
 " PLUGINS "
