@@ -84,4 +84,4 @@ let g:tex_flavor = "latex"
 
 " Set up colos for folding
 hi FoldColumn ctermbg=none ctermfg=cyan
-hi Folded ctermbg=black ctermfg=cyan
+hi Folded ctermbg=none ctermfg=cyan
