@@ -19,6 +19,7 @@ set timeoutlen=1000 ttimeoutlen=0
 set foldcolumn=1
 set scrolloff=5
 set autochdir " automatically set working directory to path of open file.
+set splitbelow " open splits below the current one
 
 " turn off rnu when in insert mode
 au FocusLost * :set nornu 
