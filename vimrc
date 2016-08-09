@@ -40,6 +40,9 @@ map å ^
 map ¤ $
 " nnoremap Y y$ TODO: figure this out, this breaks 'yy'
 
+" '/' on a visual selection searches for it (similar to *)
+vnoremap / y/<C-R>"<CR>
+
 " Map C-space to autocompletion
 if has("gui_running")
     " C-Space seems to work under gVim on both Linux and win32
@@ -77,7 +80,4 @@ source $HOME/.vim/tex-bindings.vim
 
 " Set up colos for folding
 hi FoldColumn ctermbg=none ctermfg=cyan
-
-hi FoldColumn guibg=none guifg=cyan
 hi Folded ctermbg=black ctermfg=cyan
-hi Folded guibg=black guifg=cyan
