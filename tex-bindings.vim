@@ -12,7 +12,7 @@ autocmd Filetype tex,latex,plaintex vnoremap <buffer> <C-i> `>a}`<i\emph{lviB
 
 " select inside math mode etc.
 autocmd Filetype tex,latex,plaintex onoremap <buffer> <silent> i$ :<c-u>normal! T$vt$<cr>
-autocmd Filetype tex,latex,plaintex vnoremap <buffer> i$ T$ot$
+"autocmd Filetype tex,latex,plaintex vnoremap <buffer> i$ T$ot$
 "TODO: dollar sign things, see http://stackoverflow.com/a/35042848/5208725
 "autocmd Filetype tex,latex,plaintex vnoremap <buffer> $$ ??? " <- surround by $
 "autocmd Filetype tex,latex,plaintex inoremap <buffer> $ $$i
