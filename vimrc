@@ -35,9 +35,11 @@ map <F7> :tabp <CR>
 map <C-F7> :tabm -<CR>
 map <F8> :tabn <CR>
 map <C-F8> :tabm +<CR>
+
 " fixing some unutilized parts of the scandinavian keyboard (TODO: make this depend on keyboard layout?)
 map å ^
 map ¤ $
+
 " nnoremap Y y$ TODO: figure this out, this breaks 'yy'
 
 " '/' on a visual selection searches for it (similar to *)
@@ -59,6 +61,7 @@ endif
 " pressing enter when the autocomplete menu is open just selects the option.
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
+
 """""""""""
 " PLUGINS "
 """""""""""
@@ -67,17 +70,16 @@ call plug#begin('~/.vim/plugged')
  Plug 'lervag/vimtex', {'for': ['tex', 'plaintex']} " TODO: for plaintex as well (?)
 call plug#end() "
 
-"autocmd BufNewFile,BufRead *.html source ~/.vim/ftplugin/
 
-" TODO: figure out which of these to use...
+"""""""""""""""""""""""""""""""""""
+" SETTINGS SPECIFIC TO FILE TYPES "
+"""""""""""""""""""""""""""""""""""
+
+" TODO: figure out what 'indent' and 'plugin' mean...
 filetype indent plugin on
-"filetype plugin on
-
-" this is already done by filetype indent plugin on i think?
-"autocmd FiletType python setlocal expandtab smarttab shiftwidth=2 tabstop=2
 
 " LaTeX specifig options
-" see: ftplugin/tex.vim
+" see also: ftplugin/tex.vim
 let g:tex_flavor = "latex"
 
 " Set up colos for folding
