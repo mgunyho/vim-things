@@ -42,6 +42,8 @@ map <C-F8> :tabm +<CR>
 " fixing some unutilized parts of the scandinavian keyboard (TODO: make this depend on keyboard layout?)
 map å ^
 map ¤ $
+" map non-breaking space to actual space
+inoremap   <Space>
 
 " nnoremap Y y$ TODO: figure this out, this breaks 'yy'
 
