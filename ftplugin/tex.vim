@@ -15,7 +15,7 @@ onoremap <buffer> <silent> i$ :<c-u>normal! T$vt$<cr>
 "autocmd Filetype tex,latex,plaintex vnoremap <buffer> i$ T$ot$
 "TODO: dollar sign things, see http://stackoverflow.com/a/35042848/5208725
 "vnoremap <buffer> $$ ??? " <- surround by $
-inoremap <buffer> $ $$i
+"inoremap <buffer> $ $$i
 vnoremap <buffer> ¤ <ESC>`>a$<ESC>`<i$<ESC>lvt$
 
 

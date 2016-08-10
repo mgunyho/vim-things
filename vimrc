@@ -90,6 +90,8 @@ filetype indent plugin on
 " LaTeX specifig options
 " see also: ftplugin/tex.vim
 let g:tex_flavor = "latex"
+"TODO: make this only for tex files.
+let g:AutoClosePairs_add = "$"
 
 " Set up colos for folding
 hi FoldColumn ctermbg=none ctermfg=cyan
