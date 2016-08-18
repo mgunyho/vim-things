@@ -3,6 +3,7 @@ set foldcolumn=1
 
 try
 	colorscheme one
+	set background=dark
 catch
 	colorscheme torte
 	hi FoldColumn guibg=black
