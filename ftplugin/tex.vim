@@ -29,8 +29,8 @@ inoremap <buffer> <C-f> \dfrac{}{}F}i
 inoremap <buffer> <C-d> _{}i
 
 
-"TODO: spelling
-"setlocal spell spellang=en_gb
+" see :help spell, zg to approve the spelling of a word.
+setlocal spell spelllang=en_gb
 
 "NOTE: this assumes that vimtex is loaded
 "TODO: if exists(g:plugs) | if get(g:plugs, 'vimtex', 0) != 0  ... noremap ...

@@ -39,6 +39,13 @@ map <C-F7> :tabm -<CR>
 map <F8> :tabn <CR>
 map <C-F8> :tabm +<CR>
 
+" use alt + hjkl to navigate windows TODO
+" (tmux may cactch these)
+"nnoremap <A-h> <C-w>h
+"nnoremap <A-j> <C-w>j
+"nnoremap <A-k> <C-w>k
+"nnoremap <A-l> <C-w>l
+
 " fixing some unutilized parts of the scandinavian keyboard (TODO: make this depend on keyboard layout?)
 map å ^
 map ¤ $
@@ -56,6 +63,8 @@ if has("gui_running")
     inoremap <C-Space> <C-n>
     "http://stackoverflow.com/questions/1506764/how-to-map-ctrla-and-ctrlshifta-differently
     "inoremap <C-S-Space> <C-p>
+	
+
 else " no gui
   if has("unix")
     inoremap <Nul> <C-n>
@@ -92,6 +101,7 @@ filetype indent plugin on
 " LaTeX specifig options
 " see also: ftplugin/tex.vim
 let g:tex_flavor = "latex"
+let g:tex_comment_nospell = 1
 "TODO: make this only for tex files.
 let g:AutoClosePairs_add = "$"
 
