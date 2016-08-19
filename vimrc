@@ -57,6 +57,9 @@ inoremap   <Space>
 " '/' on a visual selection searches for it (similar to *)
 vnoremap / y/<C-R>"<CR>
 
+" 'gd' with a capital D opens definition in new (small) split, to get a peak
+nnoremap gD :10sp<CR> gd
+
 " Map C-space to autocompletion
 if has("gui_running")
     " C-Space seems to work under gVim on both Linux and win32
