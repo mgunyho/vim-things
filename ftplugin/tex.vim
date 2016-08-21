@@ -1,6 +1,13 @@
-" move down wrapped rows with k and j in tex files
-nnoremap <buffer> k gk
-nnoremap <buffer> j gj
+" map j and k to gj and gk in tex files, except when a 'count' is specified.
+function! Gjk(count, dir)
+	if count == 0
+		exe "normal! g" . a:dir
+	else
+		exe "normal! " . a:count . a:dir
+	endif
+endfunction
+nnoremap <silent> <buffer> k :<C-U>call Gjk(v:count, "k")<CR>
+nnoremap <silent> <buffer> j :<C-U>call Gjk(v:count, "j")<CR>
 
 inoremap <buffer> <C-b> \textbf{}i
 vnoremap <buffer> <C-b> `>a}`<i\textbf{lviB
