@@ -49,6 +49,10 @@ map <C-F8> :tabm +<CR>
 " fixing some unutilized parts of the scandinavian keyboard (TODO: make this depend on keyboard layout?)
 map å ^
 map ¤ $
+" switch , and ; to be consistent with n vs N, f vs F etc (on the Finnish  keybaord at least).
+nnoremap , ;
+nnoremap ; ,
+
 " map non-breaking space to actual space
 inoremap   <Space>
 
