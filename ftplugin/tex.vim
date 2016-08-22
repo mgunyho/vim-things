@@ -44,3 +44,7 @@ setlocal spell spelllang=en_gb
 "TODO: figure out the command (see map \ll)
 "nnoremap <buffer> <localleader>lr <Plug>vimtex-compile-toggle
 "nnoremap <buffer> <localleader>lr 2\ll
+
+"TODO: splits get screwed up on vimtex compile, see
+"~/.vim/plugged/vimtex/autoload/vimtex/latexmk.vim, line 303 -> 
+"(function vimtex#latexmk#output), esp. 'silent exe bwipeout ...'
