@@ -21,6 +21,7 @@ set scrolloff=5
 set display=lastline " display long lines at the bottom partially, instead of '@' symbols.
 set splitbelow " open splits below the current one
 set autochdir " automatically set working directory to path of open file.
+set foldopen-=search " do not open folds if there's a match inside them
 " actually cd to the current file (the above is only applied upon changing file)
 cd %:p:h
 
@@ -50,14 +51,18 @@ map <C-F8> :tabm +<CR>
 " fixing some unutilized parts of the scandinavian keyboard (TODO: make this depend on keyboard layout?)
 map å ^
 map ¤ $
+
 " switch , and ; to be consistent with n vs N, f vs F etc (on the Finnish  keybaord at least).
 " TODO: swap these based on if the previous command was f/F or t/T
 nnoremap , ;
 nnoremap ; ,
 
+" map ctrl-h to remove search highlight, shouldn't conflict with anything.
+nnoremap <silent> <C-h> :noh<CR>
+
 " swap around the mappings of w, b and e to make E mappable to ge to be consistent with the above
 " TODO: is this a good idea? - needs a fourth key to work completely..
-" nnoremap <silent> E :<C-u>normal! ge<CR>
+nnoremap E ge
 " nnoremap <silent> W :normal! b<CR>
 " nnoremap <silent> b :normal! W<CR>
 " nnoremap <silent> B :normal! B<CR>
