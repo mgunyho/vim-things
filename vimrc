@@ -49,9 +49,10 @@ map <C-F8> :tabm +<CR>
 "nnoremap <A-l> <C-w>l
 
 " fixing some unutilized parts of the scandinavian keyboard (TODO: make this depend on keyboard layout?)
-map å ^
-map ¤ $
-
+nnoremap å ^
+nnoremap gå g^
+nnoremap ¤ $
+nnoremap g¤ g$
 " switch , and ; to be consistent with n vs N, f vs F etc (on the Finnish  keybaord at least).
 " TODO: swap these based on if the previous command was f/F or t/T
 nnoremap , ;
