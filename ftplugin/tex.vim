@@ -29,9 +29,10 @@ vnoremap <buffer> ¤ <ESC>`>a$<ESC>`<i$<ESC>lvt$
 " math related shortcuts
 " TODO: look up other handy ones in texstudio settings.
 inoremap <buffer> <C-f> \dfrac{}{}F}i
+"
 "ctrl+u and ctrl+d for _{} and ^{}
 "NOTE: ctrl+u overrides 'erase inserted characters' (see :h i_CTRL-U)
-"autocmd Filetype tex,latex,plaintex, inoremap <buffer> <C-u> ^{}i
+inoremap <buffer> <C-u> ^{}i
 "NOTE: ctrl+d overrides 'unindent by one (or sth like that)' (see :h i_CTRL-D)
 inoremap <buffer> <C-d> _{}i
 
