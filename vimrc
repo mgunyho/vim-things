@@ -41,12 +41,12 @@ map <C-F7> :tabm -<CR>
 map <F8> :tabn <CR>
 map <C-F8> :tabm +<CR>
 
-" use alt + hjkl to navigate windows TODO
-" (tmux may cactch these)
-"nnoremap <A-h> <C-w>h
-"nnoremap <A-j> <C-w>j
-"nnoremap <A-k> <C-w>k
-"nnoremap <A-l> <C-w>l
+" use alt + hjkl to navigate windows
+" (doesn't work always e.g. in tmux)
+nnoremap <A-h> <C-w>h
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
 
 " fixing some unutilized parts of the scandinavian keyboard (TODO: make this depend on keyboard layout?)
 nnoremap å ^
