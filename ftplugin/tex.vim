@@ -9,13 +9,13 @@ endfunction
 nnoremap <silent> <buffer> k :<C-U>call Gjk(v:count, "k")<CR>
 nnoremap <silent> <buffer> j :<C-U>call Gjk(v:count, "j")<CR>
 
-inoremap <buffer> <C-b> \textbf{}i
-vnoremap <buffer> <C-b> `>a}`<i\textbf{lviB
+inoremap <buffer> <C-b> \textbf{}<Esc>i
+vnoremap <buffer> <C-b> <Esc>`>a}<Esc>`<i\textbf{<Esc>lviB
 
 "TODO: this overrides <Tab> in insert mode, fix that
-inoremap <buffer> <C-i> \emph{}i
+inoremap <buffer> <C-i> \emph{}<Esc>i
 "TODO: use onoremap? how does it work?
-vnoremap <buffer> <C-i> `>a}`<i\emph{lviB
+vnoremap <buffer> <C-i> <Esc>`>a}<Esc>`<i\emph{<Esc>lviB
 
 " select inside math mode etc.
 onoremap <buffer> <silent> i$ :<c-u>normal! T$vt$<cr>
@@ -28,13 +28,13 @@ vnoremap <buffer> ¤ <ESC>`>a$<ESC>`<i$<ESC>lvt$
 
 " math related shortcuts
 " TODO: look up other handy ones in texstudio settings.
-inoremap <buffer> <C-f> \dfrac{}{}F}i
+inoremap <buffer> <C-f> \dfrac{}{}<Esc>F}i
 "
 "ctrl+u and ctrl+d for _{} and ^{}
 "NOTE: ctrl+u overrides 'erase inserted characters' (see :h i_CTRL-U)
-inoremap <buffer> <C-u> ^{}i
+inoremap <buffer> <C-u> ^{}<Esc>i
 "NOTE: ctrl+d overrides 'unindent by one (or sth like that)' (see :h i_CTRL-D)
-inoremap <buffer> <C-d> _{}i
+inoremap <buffer> <C-d> _{}<Esc>i
 
 
 " see :help spell, zg to approve the spelling of a word.
