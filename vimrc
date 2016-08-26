@@ -74,7 +74,8 @@ inoremap   <Space>
 " nnoremap Y y$ TODO: figure this out, this breaks 'yy'
 
 " '/' on a visual selection searches for it (similar to *)
-vnoremap / y/<C-R>"<CR>
+"vnoremap / y/<C-R>"<CR>
+vnoremap * y/<C-R>"<CR>
 
 " 'gd' with a capital D opens definition in new (small) split, to get a peak
 nnoremap gD :10sp<CR> gd
@@ -82,11 +83,9 @@ nnoremap gD :10sp<CR> gd
 " Map C-space to autocompletion
 if has("gui_running")
     " C-Space seems to work under gVim on both Linux and win32
-    inoremap <C-Space> <C-n>
+    "inoremap <C-Space> <C-n>
     "http://stackoverflow.com/questions/1506764/how-to-map-ctrla-and-ctrlshifta-differently
-    "inoremap <C-S-Space> <C-p>
-	
-
+    inoremap <C-S-Space> <C-p>
 else " no gui
   if has("unix")
     inoremap <Nul> <C-n>
