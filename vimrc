@@ -129,3 +129,11 @@ let g:AutoClosePairs_add = "$"
 " Set up colos for folding
 hi FoldColumn ctermbg=none ctermfg=cyan
 hi Folded ctermbg=none ctermfg=cyan
+
+" TODO: abbreviations. This requires unmapping <space> from autoclose.vim, see
+" :verbose imap <Space>, look for b:AutoCloseExpandSpace
+" ab adn and
+" ab tihs this
+" ab teh the
+" ab hte the
+" source abbrev.vim
