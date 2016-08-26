@@ -20,6 +20,7 @@ set foldcolumn=1
 set scrolloff=5
 set display=lastline " display long lines at the bottom partially, instead of '@' symbols.
 set splitbelow " open splits below the current one
+set splitright " open vsplits to the right of the current one
 set autochdir " automatically set working directory to path of open file.
 set foldopen-=search " do not open folds if there's a match inside them
 " actually cd to the current file (the above is only applied upon changing file)
