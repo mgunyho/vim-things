@@ -86,7 +86,8 @@ if has("gui_running")
     " C-Space seems to work under gVim on both Linux and win32
     "inoremap <C-Space> <C-n>
     "http://stackoverflow.com/questions/1506764/how-to-map-ctrla-and-ctrlshifta-differently
-    inoremap <C-S-Space> <C-p>
+    "inoremap <C-S-Space> <C-p>
+    inoremap <C-Space> <C-p>
 else " no gui
   if has("unix")
     inoremap <Nul> <C-n>
