@@ -51,6 +51,7 @@ nnoremap <A-l> <C-w>l
 
 " fixing some unutilized parts of the scandinavian keyboard (TODO: make this depend on keyboard layout?)
 nnoremap å ^
+vnoremap å ^
 nnoremap gå g^
 nnoremap ¤ $
 nnoremap g¤ g$
