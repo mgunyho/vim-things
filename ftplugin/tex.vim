@@ -12,6 +12,9 @@ nnoremap <silent> <buffer> j :<C-U>call Gjk(v:count, "j")<CR>
 inoremap <buffer> <C-b> \textbf{}<Esc>i
 vnoremap <buffer> <C-b> <Esc>`>a}<Esc>`<i\textbf{<Esc>lviB
 
+" Fix a common mistake when commenting
+inoremap <buffer> ¤ %
+
 "TODO: this overrides <Tab> in insert mode, fix that
 inoremap <buffer> <C-i> \emph{}<Esc>i
 "TODO: use onoremap? how does it work?
@@ -49,3 +52,9 @@ setlocal spell spelllang=en_gb
 "TODO: splits get screwed up on vimtex compile, see
 "~/.vim/plugged/vimtex/autoload/vimtex/latexmk.vim, line 303 -> 
 "(function vimtex#latexmk#output), esp. 'silent exe bwipeout ...'
+
+" TODO. how to make these buffer-specific? do the '\ref ...' parts below work? do they need quotation marks?
+" Latex-specific abbreviations commonly only used when writingt tex.
+" ab fig. fig.\ \ref{fig:
+" ab ref. ref.\ \cite{
+" ab eqn equation \eqref{eq:
