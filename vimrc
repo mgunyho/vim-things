@@ -139,4 +139,4 @@ hi Folded ctermbg=none ctermfg=cyan
 
 " Abbreviations are defined in a separate file. NOTE: disabled
 " 'AutoCloseExpandSpace' from AutoClose.vim.
-source abbrev.vim
+source ~/.vim/abbrev.vim
