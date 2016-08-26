@@ -53,8 +53,8 @@ setlocal spell spelllang=en_gb
 "~/.vim/plugged/vimtex/autoload/vimtex/latexmk.vim, line 303 -> 
 "(function vimtex#latexmk#output), esp. 'silent exe bwipeout ...'
 
-" TODO. how to make these buffer-specific? do the '\ref ...' parts below work? do they need quotation marks?
-" Latex-specific abbreviations commonly only used when writingt tex.
-" ab fig. fig.\ \ref{fig:
-" ab ref. ref.\ \cite{
-" ab eqn equation \eqref{eq:
+" Latex-specific abbreviations commonly only used when writing tex.
+ia <silent> <buffer> fig fig.\ \ref{fig:}<Left><C-R>=Eatchar('.')<CR>
+ia <silent> <buffer> ref ref.\ \cite{}<Left><C-R>=Eatchar('.')<CR>
+ia <silent> <buffer> eqn equation \eqref{eq:}<Left><C-R>=Eatchar('.')<CR>
+ia <buffer> cirquit circuit

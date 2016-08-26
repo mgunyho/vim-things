@@ -123,17 +123,18 @@ filetype indent plugin on
 " see also: ftplugin/tex.vim
 let g:tex_flavor = "latex"
 let g:tex_comment_nospell = 1
+
 "TODO: make this only for tex files.
 let g:AutoClosePairs_add = "$"
+
+" don't expand spaces after auto-closing brackets. Needed to make
+" abbreviations work.
+let g:AutoCloseExpandSpace = 0
 
 " Set up colos for folding
 hi FoldColumn ctermbg=none ctermfg=cyan
 hi Folded ctermbg=none ctermfg=cyan
 
-" TODO: abbreviations. This requires unmapping <space> from autoclose.vim, see
-" :verbose imap <Space>, look for b:AutoCloseExpandSpace
-" ab adn and
-" ab tihs this
-" ab teh the
-" ab hte the
-" source abbrev.vim
+" Abbreviations are defined in a separate file. NOTE: disabled
+" 'AutoCloseExpandSpace' from AutoClose.vim.
+source abbrev.vim
