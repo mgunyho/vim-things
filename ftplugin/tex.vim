@@ -53,7 +53,7 @@ vnoremap <buffer> <C-d> <Esc>`>a}<Esc>`<i_{<Esc>lviB
 
 
 " see :help spell, zg to approve the spelling of a word.
-setlocal spell spelllang=en_gb
+setlocal spell spelllang=en_us
 
 "NOTE: this assumes that vimtex is loaded
 "TODO: if exists(g:plugs) | if get(g:plugs, 'vimtex', 0) != 0  ... noremap ...
