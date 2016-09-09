@@ -75,9 +75,11 @@ inoremap   <Space>
 
 " nnoremap Y y$ TODO: figure this out, this breaks 'yy'
 
-" '/' on a visual selection searches for it (similar to *)
-"vnoremap / y/<C-R>"<CR>
+" '*' on a visual selection searches for it (similar to normal mode*)
 vnoremap * y/<C-R>"<CR>
+" make n and N behave the same way regardless of whether * or # is used.
+nnoremap # *NN
+vnoremap # y/<C-R>"<CR>NN
 
 " 'gd' with a capital D opens definition in new (small) split, to get a peak
 nnoremap gD :10sp<CR> gd
