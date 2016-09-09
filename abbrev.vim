@@ -20,7 +20,10 @@ ia teh the
 ia nad and
 ia adn and
 ia tihs this
+ia thsi this
 ia wiht with
 ia taht that
+ia vawe wave
+ia wiev view
 ia lenght length
 ia lentgh length
