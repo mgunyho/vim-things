@@ -65,7 +65,7 @@ nnoremap <silent> <C-h> :noh<CR>
 
 " swap around the mappings of w, b and e to make E mappable to ge to be consistent with the above
 " TODO: is this a good idea? - needs a fourth key to work completely..
-nnoremap E ge
+" nnoremap E ge
 " nnoremap <silent> W :normal! b<CR>
 " nnoremap <silent> b :normal! W<CR>
 " nnoremap <silent> B :normal! B<CR>
@@ -112,6 +112,8 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 call plug#begin('~/.vim/plugged')
  Plug 'lervag/vimtex', {'for': ['tex', 'plaintex']} " TODO: for plaintex as well (?)
+ "TODO: surround.vim
+ "Plug 'https://github.com/tpope/vim-surround.git'
 call plug#end() "
 
 
