@@ -77,6 +77,11 @@ ia <buffer> cirquit circuit
 ia <buffer> freq frequency
 ia <buffer> nosie noise
 
+ia <buffer> -> \rightarrow
+ia <buffer> <- \leftarrow
+ia <buffer> => \Rightarrow
+ia <buffer> <= \Leftarrow
+
 "TODO: figure out why these don't work.
 "ia <buffer> i.e. i.e.\
 "ia <buffer> e.g. e.g.\
