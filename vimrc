@@ -126,7 +126,7 @@ call plug#end() "
 " TODO: figure out what 'indent' and 'plugin' mean...
 filetype indent plugin on
 
-" LaTeX specifig options
+" LaTeX specific options
 " see also: ftplugin/tex.vim
 let g:tex_flavor = "latex"
 let g:tex_comment_nospell = 1
