@@ -66,8 +66,8 @@ setlocal spell spelllang=en_us
 "(function vimtex#latexmk#output), esp. 'silent exe bwipeout ...'
 
 " Latex-specific abbreviations commonly only used when writing tex.
-ia <silent> <buffer> fig fig.~\ref{fig:}<Left><C-R>=Eatchar('.')<CR>
-ia <silent> <buffer> ref ref.~\cite{}<Left><C-R>=Eatchar('.')<CR>
+ia <silent> <buffer> fig Fig.~\ref{fig:}<Left><C-R>=Eatchar('.')<CR>
+ia <silent> <buffer> ref Ref.~\cite{}<Left><C-R>=Eatchar('.')<CR>
 ia <silent> <buffer> eqn equation \eqref{eq:}<Left><C-R>=Eatchar('.')<CR>
 ia <silent> <buffer> sec section \ref{sec:}<Left><C-R>=Eatchar('.')<CR>
 "TODO: make these better (involves trickery with AutoClose)
