@@ -7,5 +7,7 @@ set smartindent
 
 " remap ¤ to # to avoid mistakes when commenting.
 inoremap <buffer> ¤ #
+nnoremap r¤ r#
 
 ia <buffer> improt import
+
