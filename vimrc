@@ -21,8 +21,10 @@ set scrolloff=5
 set display=lastline " display long lines at the bottom partially, instead of '@' symbols.
 set splitbelow " open splits below the current one
 set splitright " open vsplits to the right of the current one
-set autochdir " automatically set working directory to path of open file.
+set wildmode=longest,list,full " bash-like autocompletion for commands
+set wildmenu
 set foldopen-=search " do not open folds if there's a match inside them
+set autochdir " automatically set working directory to path of open file.
 " actually cd to the current file (the above is only applied upon changing file)
 cd %:p:h
 
@@ -65,7 +67,7 @@ nnoremap <silent> <C-h> :noh<CR>
 
 " swap around the mappings of w, b and e to make E mappable to ge to be consistent with the above
 " TODO: is this a good idea? - needs a fourth key to work completely..
-nnoremap E ge
+" nnoremap E ge
 " nnoremap <silent> W :normal! b<CR>
 " nnoremap <silent> b :normal! W<CR>
 " nnoremap <silent> B :normal! B<CR>
@@ -75,9 +77,11 @@ inoremap   <Space>
 
 " nnoremap Y y$ TODO: figure this out, this breaks 'yy'
 
-" '/' on a visual selection searches for it (similar to *)
-"vnoremap / y/<C-R>"<CR>
+" '*' on a visual selection searches for it (similar to normal mode*)
 vnoremap * y/<C-R>"<CR>
+" make n and N behave the same way regardless of whether * or # is used.
+nnoremap # *NN
+vnoremap # y/<C-R>"<CR>NN
 
 " 'gd' with a capital D opens definition in new (small) split, to get a peak
 nnoremap gD :10sp<CR> gd
@@ -112,6 +116,8 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 call plug#begin('~/.vim/plugged')
  Plug 'lervag/vimtex', {'for': ['tex', 'plaintex']} " TODO: for plaintex as well (?)
+ "TODO: surround.vim
+ "Plug 'https://github.com/tpope/vim-surround.git'
 call plug#end() "
 
 
@@ -122,7 +128,7 @@ call plug#end() "
 " TODO: figure out what 'indent' and 'plugin' mean...
 filetype indent plugin on
 
-" LaTeX specifig options
+" LaTeX specific options
 " see also: ftplugin/tex.vim
 let g:tex_flavor = "latex"
 let g:tex_comment_nospell = 1
