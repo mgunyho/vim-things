@@ -24,6 +24,7 @@ set splitright " open vsplits to the right of the current one
 set wildmode=longest,list,full " bash-like autocompletion for commands
 set wildmenu
 set foldopen-=search " do not open folds if there's a match inside them
+set cursorline " highglight the line on which the cursor is atm.
 set autochdir " automatically set working directory to path of open file.
 " actually cd to the current file (the above is only applied upon changing file)
 cd %:p:h
@@ -39,6 +40,7 @@ autocmd InsertLeave * :set rnu
 " MAPPINGS "
 """"""""""""
 
+" switch [move] tabs with [ctrl] f7 / f8
 map <F7> :tabp <CR>
 map <C-F7> :tabm -<CR>
 map <F8> :tabn <CR>
@@ -61,6 +63,8 @@ nnoremap g¤ g$
 " TODO: swap these based on if the previous command was f/F or t/T
 nnoremap , ;
 nnoremap ; ,
+vnoremap , ;
+vnoremap ; ,
 
 " map ctrl-h to remove search highlight, shouldn't conflict with anything.
 nnoremap <silent> <C-h> :noh<CR>
