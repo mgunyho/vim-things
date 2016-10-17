@@ -75,6 +75,7 @@ ia <silent> <buffer> \left() \left(\right)<Esc>F(a<C-R>=Eatchar('.')<CR>
 ia <silent> <buffer> \left{} \left{\right}<Esc>F{a<C-R>=Eatchar('.')<CR>
 ia <buffer> cirquit circuit
 ia <buffer> freq frequency
+ia <buffer> fourier Fourier
 ia <buffer> nosie noise
 
 ia <buffer> -> \rightarrow
