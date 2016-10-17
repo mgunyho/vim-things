@@ -22,7 +22,7 @@ inoremap <buffer> ¤ %
 
 " Ctrl+i for italics
 "TODO: this overrides <Tab> in insert mode, fix that
-inoremap <buffer> <C-i> \emph{}<Esc>i
+" inoremap <buffer> <C-i> \emph{}<Esc>i
 "TODO: use onoremap? how does it work?
 vnoremap <buffer> <C-i> <Esc>`>a}<Esc>`<i\emph{<Esc>lviB
 " slightly more concise, but breaks if there's a newline in the selection.
@@ -40,8 +40,8 @@ vnoremap <buffer> ¤ <ESC>`>a$<ESC>`<i$<ESC>lvt$
 " math related shortcuts
 " TODO: look up other handy ones in texstudio settings.
 
-" ctrl+f for dfrac
-inoremap <buffer> <C-f> \dfrac{}{}<Esc>F}i
+" ctrl+f for frac
+inoremap <buffer> <C-f> \frac{}{}<Esc>F}i
 
 "ctrl+u and ctrl+d for _{} and ^{}
 "NOTE: ctrl+u overrides 'erase inserted characters' (see :h i_CTRL-U)
