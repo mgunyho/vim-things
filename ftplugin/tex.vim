@@ -20,11 +20,11 @@ vnoremap <buffer> <C-b> <Esc>`>a}<Esc>`<i\textbf{<Esc>lviB
 " Fix a common mistake when commenting
 inoremap <buffer> ¤ %
 
-" Ctrl+i for italics
-"TODO: this overrides <Tab> in insert mode, fix that
-" inoremap <buffer> <C-i> \emph{}<Esc>i
+" Ctrl+e for italics
+"TODO: <C-i> overrides <Tab> in insert mode, fix that (?)
+inoremap <buffer> <C-e> \emph{}<Esc>i
 "TODO: use onoremap? how does it work?
-vnoremap <buffer> <C-i> <Esc>`>a}<Esc>`<i\emph{<Esc>lviB
+vnoremap <buffer> <C-e> <Esc>`>a}<Esc>`<i\emph{<Esc>lviB
 " slightly more concise, but breaks if there's a newline in the selection.
 "vnoremap <buffer> <C-i> s\emph{ <Esc>vpa}<Esc>gv
 
@@ -66,10 +66,10 @@ setlocal spell spelllang=en_us
 "(function vimtex#latexmk#output), esp. 'silent exe bwipeout ...'
 
 " Latex-specific abbreviations commonly only used when writing tex.
-ia <silent> <buffer> fig Fig.~\ref{fig:}<Left><C-R>=Eatchar('.')<CR>
+ia <silent> <buffer> figu Fig.~\ref{fig:}<Left><C-R>=Eatchar('.')<CR>
 ia <silent> <buffer> ref Ref.~\cite{}<Left><C-R>=Eatchar('.')<CR>
 ia <silent> <buffer> eqn equation \eqref{eq:}<Left><C-R>=Eatchar('.')<CR>
-ia <silent> <buffer> sec section \ref{sec:}<Left><C-R>=Eatchar('.')<CR>
+ia <silent> <buffer> sec Sec.~\ref{sec:}<Left><C-R>=Eatchar('.')<CR>
 "TODO: make these better (involves trickery with AutoClose)
 ia <silent> <buffer> \left() \left(\right)<Esc>F(a<C-R>=Eatchar('.')<CR>
 ia <silent> <buffer> \left{} \left{\right}<Esc>F{a<C-R>=Eatchar('.')<CR>
