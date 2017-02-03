@@ -76,6 +76,8 @@ ia <silent> <buffer> \left{} \left{\right}<Esc>F{a<C-R>=Eatchar('.')<CR>
 ia <buffer> cirquit circuit
 ia <buffer> freq frequency
 ia <buffer> fourier Fourier
+ia <buffer> schrödinger Schrödinger
+ia <buffer> schrödingerin Schrödingerin
 ia <buffer> nosie noise
 
 ia <buffer> -> \rightarrow
