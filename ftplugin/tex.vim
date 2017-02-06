@@ -42,6 +42,16 @@ vnoremap <buffer> ¤ <ESC>`>a$<ESC>`<i$<ESC>lvt$
 
 " ctrl+f for frac
 inoremap <buffer> <C-f> \frac{}{}<Esc>F}i
+" ctrl+f in visual mode splits / and turns into a frac.
+function! DivToFrac()
+	let l:s = split(@", "/")
+	if len(l:s) == 1
+		let l:s = [l:s[0], ""]
+	endif
+	" TODO: use l:s[1:] instead of 1, figure out to make it work
+	let @0 = "\\frac{" . l:s[0] .  "}{" . l:s[1] . "}"
+endfunction
+vnoremap <buffer> <C-f> y:call DivToFrac()<CR>gvp2F{lviB
 
 "ctrl+u and ctrl+d for _{} and ^{}
 "NOTE: ctrl+u overrides 'erase inserted characters' (see :h i_CTRL-U)
