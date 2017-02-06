@@ -12,3 +12,5 @@ nnoremap r¤ r#
 ia <buffer> improt import
 ia <buffer> false False
 ia <buffer> true True
+ia <buffer> none None
+ia <buffer> noen None
