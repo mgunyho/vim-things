@@ -61,6 +61,9 @@ vnoremap <buffer> <C-u> <Esc>`>a}<Esc>`<i^{<Esc>lviB
 inoremap <buffer> <C-d> _{}<Esc>i
 vnoremap <buffer> <C-d> <Esc>`>a}<Esc>`<i_{<Esc>lviB
 
+" map F5 to compile current file
+nnoremap <buffer> <F5> :exec "silent ! pdflatex " . @%<CR>:redraw!<CR>
+
 
 " see :help spell, zg to approve the spelling of a word.
 setlocal spell spelllang=en_us
