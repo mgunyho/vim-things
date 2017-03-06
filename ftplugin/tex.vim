@@ -92,6 +92,10 @@ ia <buffer> fourier Fourier
 ia <buffer> schrödinger Schrödinger
 ia <buffer> schrödingerin Schrödingerin
 ia <buffer> nosie noise
+ia <buffer> Boltzman Boltzmann
+ia <buffer> boltzman Boltzmann
+ia <buffer> Boltzmanin Boltzmannin
+ia <buffer> boltzmanin Boltzmannin
 
 ia <buffer> -> \rightarrow
 ia <buffer> <- \leftarrow
