@@ -81,11 +81,12 @@ setlocal spell spelllang=en_us
 " Latex-specific abbreviations commonly only used when writing tex.
 ia <silent> <buffer> figu Fig.~\ref{fig:}<Left><C-R>=Eatchar('.')<CR>
 ia <silent> <buffer> ref Ref.~\cite{}<Left><C-R>=Eatchar('.')<CR>
-ia <silent> <buffer> eqn equation \eqref{eq:}<Left><C-R>=Eatchar('.')<CR>
+ia <silent> <buffer> eqn Eq.~\eqref{eq:}<Left><C-R>=Eatchar('.')<CR>
 ia <silent> <buffer> sec Sec.~\ref{sec:}<Left><C-R>=Eatchar('.')<CR>
 "TODO: make these better (involves trickery with AutoClose)
 ia <silent> <buffer> \left() \left(\right)<Esc>F(a<C-R>=Eatchar('.')<CR>
 ia <silent> <buffer> \left{} \left{\right}<Esc>F{a<C-R>=Eatchar('.')<CR>
+ia <buffer> matrhm mathrm
 ia <buffer> cirquit circuit
 ia <buffer> freq frequency
 ia <buffer> fourier Fourier
