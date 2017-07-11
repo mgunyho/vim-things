@@ -60,6 +60,8 @@ vnoremap <buffer> <C-u> <Esc>`>a}<Esc>`<i^{<Esc>lviB
 "NOTE: ctrl+d overrides 'unindent by one (or sth like that)' (see :h i_CTRL-D)
 inoremap <buffer> <C-d> _{}<Esc>i
 vnoremap <buffer> <C-d> <Esc>`>a}<Esc>`<i_{<Esc>lviB
+inoremap <buffer> <C-g> \subs{}<Esc>i
+vnoremap <buffer> <C-g> <Esc>`>a}<Esc>`<i\subs{<Esc>lviB
 
 " map F5 to compile current file
 nnoremap <buffer> <F5> :exec "silent ! pdflatex " . @%<CR>:redraw!<CR>
