@@ -80,6 +80,19 @@ setlocal spell spelllang=en_us
 "~/.vim/plugged/vimtex/autoload/vimtex/latexmk.vim, line 303 -> 
 "(function vimtex#latexmk#output), esp. 'silent exe bwipeout ...'
 
+" vimtex settings
+" Disable overfull/underfull \hbox and all package warnings
+let g:vimtex_quickfix_latexlog = {
+	  \ 'overfull' : 0,
+	  \ 'underfull' : 0,
+	  \}
+
+" don't open quickfix window
+" let g:vimtex_quickfix_mode = 0
+
+" open quickfix window only when there are errors, not on warnings
+let g:vimtex_quickfix_open_on_warning = 0
+
 " Latex-specific abbreviations commonly only used when writing tex.
 ia <silent> <buffer> figu Fig.~\ref{fig:}<Left><C-R>=Eatchar('.')<CR>
 ia <silent> <buffer> ref Ref.~\cite{}<Left><C-R>=Eatchar('.')<CR>
