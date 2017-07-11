@@ -107,6 +107,11 @@ ia <buffer> freq frequency
 ia <buffer> fourier Fourier
 ia <buffer> schrödinger Schrödinger
 ia <buffer> schrödingerin Schrödingerin
+ia <buffer> hamiltonian Hamiltonian
+ia <buffer> josephson Josephson
+ia <buffer> josepson Josephson
+ia <buffer> josepsh Josephson
+ia <buffer> refridgerator refrigerator
 ia <buffer> nosie noise
 ia <buffer> Boltzman Boltzmann
 ia <buffer> boltzman Boltzmann
