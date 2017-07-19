@@ -114,6 +114,7 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 "keys to search like in file browsers, and alt-j to down and alt-h to up etc.
 "'for x in abcdefghijlkmnopqrstuwvxyz: nnoremap <buffer> $x /$x'
 
+
 """""""""""
 " PLUGINS "
 """""""""""
@@ -147,6 +148,13 @@ let g:AutoCloseExpandSpace = 0
 " Set up colos for folding
 hi FoldColumn ctermbg=none ctermfg=cyan
 hi Folded ctermbg=none ctermfg=cyan
+
+" highlight trailing whitespace, from http://vim.wikia.com/wiki/Highlight_unwanted_spaces
+" TODO: get colors from colorscheme...
+highlight TrailingWhitespace ctermbg=red guibg=red
+"match ExtraWhitespace /s\+$/
+au InsertEnter * match TrailingWhitespace /\s\+\%#\@<!$/
+au InsertLeave * match TrailingWhitespace /\s\+$/
 
 " Abbreviations are defined in a separate file. NOTE: disabled
 " 'AutoCloseExpandSpace' from AutoClose.vim.
