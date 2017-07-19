@@ -129,3 +129,6 @@ ia <buffer> <= \Leftarrow
 "TODO: figure out why these don't work.
 "ia <buffer> i.e. i.e.\
 "ia <buffer> e.g. e.g.\
+
+" clear trailing whitespace from tex files on save
+autocmd BufWritePre *.tex %s/\s\+$//e

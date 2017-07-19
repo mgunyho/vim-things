@@ -152,7 +152,6 @@ hi Folded ctermbg=none ctermfg=cyan
 " highlight trailing whitespace, from http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 " TODO: get colors from colorscheme...
 highlight TrailingWhitespace ctermbg=red guibg=red
-"match ExtraWhitespace /s\+$/
 au InsertEnter * match TrailingWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match TrailingWhitespace /\s\+$/
 
