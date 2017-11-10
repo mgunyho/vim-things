@@ -98,6 +98,7 @@ if has("gui_running")
     "inoremap <C-S-Space> <C-p>
     inoremap <C-Space> <C-p>
 else " no gui
+  set nocursorline " disable this for command line (at least on putty this interferes with undercore.)
   if has("unix")
     inoremap <Nul> <C-n>
     "inoremap <S-Nul> <C-p> ??? 
