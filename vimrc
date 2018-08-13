@@ -115,6 +115,8 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 "keys to search like in file browsers, and alt-j to down and alt-h to up etc.
 "'for x in abcdefghijlkmnopqrstuwvxyz: nnoremap <buffer> $x /$x'
 
+" capital ':Tabe' is like ':tabe' except that if  the file is already open in a tab, switch to that.
+command -nargs=* -complete=file Tabe tab drop <args>
 
 """""""""""
 " PLUGINS "
