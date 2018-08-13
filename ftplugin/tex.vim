@@ -120,6 +120,8 @@ ia <buffer> Boltzman Boltzmann
 ia <buffer> boltzman Boltzmann
 ia <buffer> Boltzmanin Boltzmannin
 ia <buffer> boltzmanin Boltzmannin
+ia <buffer> lagrange Lagrange
+ia <buffer> lagrangian Lagrangian
 
 ia <buffer> -> \rightarrow
 ia <buffer> <- \leftarrow
