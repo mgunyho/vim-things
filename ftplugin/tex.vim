@@ -36,6 +36,8 @@ onoremap <buffer> <silent> i$ :<c-u>normal! T$vt$<cr>
 "inoremap <buffer> $ $$i
 vnoremap <buffer> ¤ <ESC>`>a$<ESC>`<i$<ESC>lvt$
 
+inoremap <A-q> \begin{equation*}<ESC>o\end{equation*}<ESC>O
+
 
 " math related shortcuts
 " TODO: look up other handy ones in texstudio settings.
