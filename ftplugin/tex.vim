@@ -128,6 +128,7 @@ ia <buffer> lagrangian Lagrangian
 ia <buffer> -> \rightarrow
 ia <buffer> <- \leftarrow
 ia <buffer> => \Rightarrow
+ia <buffer> ==> \;\Rightarrow\;
 ia <buffer> <= \Leftarrow
 
 "TODO: figure out why these don't work.
