@@ -7,6 +7,9 @@ plt.rcParams["savefig.directory"] = ""
 #plt.rcParams["text.usetex"] = True
 #plt.rcParams["font.family"] = "serif"
 
+ipython = "get_ipython" in globals()
+
+
 plt.close("all")
 
 
@@ -15,4 +18,4 @@ ax = fig.gca()
 
 
 
-plt.show()
+plt.show(block = not ipython)
