@@ -25,6 +25,7 @@ set wildmode=longest,list,full " bash-like autocompletion for commands
 set wildmenu
 set foldopen-=search " do not open folds if there's a match inside them
 set cursorline " highglight the line on which the cursor is atm.
+set lazyredraw " redraw screen only when macro has finished, increases execution speed
 set autochdir " automatically set working directory to path of open file.
 " actually cd to the current file (the above is only applied upon changing file)
 cd %:p:h
