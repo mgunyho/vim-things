@@ -2,6 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 #from mpl_toolkits import mplot3d # 3D plotting
 
+plt.rcParams["savefig.format"] = "pdf"
+plt.rcParams["savefig.directory"] = ""
+#plt.rcParams["text.usetex"] = True
+#plt.rcParams["font.family"] = "serif"
+
 plt.close("all")
 
 
