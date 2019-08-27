@@ -26,15 +26,16 @@ set wildmenu
 set foldopen-=search " do not open folds if there's a match inside them
 set cursorline " highglight the line on which the cursor is atm.
 set lazyredraw " redraw screen only when macro has finished, increases execution speed
+set nojoinspaces " don't produce two spaces on 'J' when a line ends with a period
 set autochdir " automatically set working directory to path of open file.
 " actually cd to the current file (the above is only applied upon changing file)
 cd %:p:h
 
 " turn off rnu when in insert mode
-au FocusLost * :set nornu 
+au FocusLost * :set nornu
 au FocusGained * :set rnu "TODO: fix the delay on this...
 autocmd InsertEnter * :set nornu
-autocmd InsertLeave * :set rnu 
+autocmd InsertLeave * :set rnu
 
 
 """"""""""""
