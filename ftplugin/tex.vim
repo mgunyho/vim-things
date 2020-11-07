@@ -131,6 +131,7 @@ ia <buffer> <- \leftarrow
 ia <buffer> => \Rightarrow
 ia <buffer> ==> \;\Rightarrow\;
 ia <buffer> <= \Leftarrow
+ia <buffer> IFF \Leftrightarrow
 
 "TODO: figure out why these don't work.
 "ia <buffer> i.e. i.e.\
