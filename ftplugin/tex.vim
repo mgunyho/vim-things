@@ -88,10 +88,10 @@ setlocal spell spelllang=en_us
 
 " vimtex settings
 " Disable overfull/underfull \hbox and all package warnings
-let g:vimtex_quickfix_latexlog = {
-	  \ 'overfull' : 0,
-	  \ 'underfull' : 0,
-	  \}
+let g:vimtex_quickfix_ignore_filters = [
+	  \ 'Overfull',
+	  \ 'Underfull',
+	  \]
 
 " don't open quickfix window
 " let g:vimtex_quickfix_mode = 0
