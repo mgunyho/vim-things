@@ -110,7 +110,7 @@ else " no gui
 endif
 
 " pressing enter when the autocomplete menu is open just selects the option.
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+"inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " pressing esc when the autocomplete menu is open leaves the current option in place and exits insert mode
 "TODO, this doesn't work. it inputs pumvisible instead of calling the function...
 "inoremap <expr> <ESC> pumvisible() ? "\<C-y><ESC>" : "\<C-g>u\<ESC>"
