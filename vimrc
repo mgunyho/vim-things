@@ -87,6 +87,7 @@ nnoremap Y y$
 " '*' on a visual selection searches for it (similar to normal mode*)
 vnoremap * y/<C-R>"<CR>
 " make n and N behave the same way regardless of whether * or # is used.
+" TODO: something like :silent exec *NN so the screen doesn't jump around here
 nnoremap # *NN
 vnoremap # y/<C-R>"<CR>NN
 
