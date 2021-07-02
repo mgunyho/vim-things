@@ -81,7 +81,8 @@ nnoremap <silent> <C-h> :noh<CR>
 " map non-breaking space to actual space
 inoremap   <Space>
 
-" nnoremap Y y$ TODO: figure this out, this breaks 'yy'
+" inspired by http://karolis.koncevicius.lt/posts/porn_zen_and_vimrc/
+nnoremap Y y$
 
 " '*' on a visual selection searches for it (similar to normal mode*)
 vnoremap * y/<C-R>"<CR>
