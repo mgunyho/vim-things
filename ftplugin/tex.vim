@@ -22,9 +22,11 @@ inoremap <buffer> ¤ %
 
 " Ctrl+e for italics
 "TODO: <C-i> overrides <Tab> in insert mode, fix that (?)
-inoremap <buffer> <C-e> \emph{}<Esc>i
+"inoremap <buffer> <C-e> \emph{}<Esc>i
+inoremap <buffer> <C-e> \oemph{}<Esc>i
 "TODO: use onoremap? how does it work?
-vnoremap <buffer> <C-e> <Esc>`>a}<Esc>`<i\emph{<Esc>lviB
+"vnoremap <buffer> <C-e> <Esc>`>a}<Esc>`<i\emph{<Esc>lviB
+vnoremap <buffer> <C-e> <Esc>`>a}<Esc>`<i\oemph{<Esc>lviB
 " slightly more concise, but breaks if there's a newline in the selection.
 "vnoremap <buffer> <C-i> s\emph{ <Esc>vpa}<Esc>gv
 
