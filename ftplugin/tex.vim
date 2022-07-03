@@ -134,6 +134,9 @@ ia <buffer> Boltzmanin Boltzmannin
 ia <buffer> boltzmanin Boltzmannin
 ia <buffer> lagrange Lagrange
 ia <buffer> lagrangian Lagrangian
+"ia <buffer> €quation equation "TODO
+ia <buffer> homogenous homogeneous
+ia <buffer> hermitian Hermitian
 
 ia <buffer> -> \rightarrow
 ia <buffer> <- \leftarrow
