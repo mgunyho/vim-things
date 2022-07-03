@@ -238,6 +238,14 @@ function! Toggle() "{{{
             let s:wordUnderCursor_tmp = "min"
             let s:toggleDone = 1
 
+		" NOTE: this breaks if the cursor is on the '\' character in \iffalse
+        elseif (s:wordUnderCursor ==? "iffalse")
+            let s:wordUnderCursor_tmp = "iftrue"
+            let s:toggleDone = 1
+        elseif (s:wordUnderCursor ==? "iftrue")
+            let s:wordUnderCursor_tmp = "iffalse"
+            let s:toggleDone = 1
+
         endif
 
          " preserve case (provided by Jan Christoph Ebersbach)
