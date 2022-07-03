@@ -49,10 +49,13 @@ inoremap <A-q> \begin{align*}<ESC>o&<cr>=<cr>\end{align*}<ESC>2kO
 inoremap <buffer> <C-f> \frac{}{}<Esc>F}i
 " ctrl+f in visual mode splits / and turns into a frac.
 function! DivToFrac()
+	" TODO: inverse: if @" ~= "frac" ... let @0 = substitute(@",
+	" '\\frac{\(.*\)}{\(.*\)}', '\1 / \2') else ...
 	let l:s = split(@", "/")
 	if len(l:s) == 1
 		let l:s = [l:s[0], ""]
 	endif
+	" TODO: strip trailing spaces: https://stackoverflow.com/questions/4478891/is-there-a-vimscript-equivalent-for-rubys-strip-strip-leading-and-trailing-s
 	" TODO: use l:s[1:] instead of 1, figure out to make it work
 	let @0 = "\\frac{" . l:s[0] .  "}{" . l:s[1] . "}"
 endfunction
