@@ -230,6 +230,7 @@ function! Toggle() "{{{
             let s:wordUnderCursor_tmp = "define"
             let s:toggleDone = 1
 
+		" own additions
         elseif (s:wordUnderCursor ==? "min")
             let s:wordUnderCursor_tmp = "max"
             let s:toggleDone = 1
