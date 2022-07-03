@@ -99,7 +99,14 @@ let g:vimtex_quickfix_ignore_filters = [
 " let g:vimtex_quickfix_mode = 0
 
 " open quickfix window only when there are errors, not on warnings
-let g:vimtex_quickfix_open_on_warning = 0
+"let g:vimtex_quickfix_open_on_warning = 0
+
+" okular settings
+let g:vimtex_view_general_viewer = 'okular'
+let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
+let g:vimtex_view_general_options_latexmk = '--unique'
+
+" let g:vimtex_cache_root = '/home/marci/.cache/vimtex'
 
 " Latex-specific abbreviations commonly only used when writing tex.
 ia <silent> <buffer> figu Fig.~\ref{fig:}<Left><C-R>=Eatchar('.')<CR>
