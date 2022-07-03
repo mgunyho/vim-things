@@ -149,5 +149,9 @@ ia <buffer> IFF \Leftrightarrow
 "ia <buffer> i.e. i.e.\
 "ia <buffer> e.g. e.g.\
 
+"TODO: fix slow omnicompletion in tex files. see:
+"https://github.com/lervag/vimtex/blob/master/autoload/vimtex/complete.vim
+"and :h compl-omni
+
 " clear trailing whitespace from tex files on save
 autocmd BufWritePre *.tex %s/\s\+$//e
