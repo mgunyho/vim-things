@@ -127,6 +127,9 @@ command -nargs=* -complete=file Tabe tab drop <args>
 " PLUGINS "
 """""""""""
 
+au BufEnter,BufWinEnter,BufNewFile,BufRead *.sc,*.scd set filetype=supercollider
+au Filetype supercollider packadd scvim
+
 call plug#begin('~/.vim/plugged')
  Plug 'lervag/vimtex', {'for': ['tex', 'plaintex']} " TODO: for plaintex as well (?)
  "TODO: surround.vim
