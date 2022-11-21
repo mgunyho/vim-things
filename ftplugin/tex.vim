@@ -39,8 +39,11 @@ onoremap <buffer> <silent> i$ :<c-u>normal! T$vt$<cr>
 "inoremap <buffer> $ $$i
 vnoremap <buffer> ¤ <ESC>`>a$<ESC>`<i$<ESC>lvt$
 
+
 "inoremap <A-q> \begin{align}<ESC>o\end{align}<ESC>O
 inoremap <A-q> \begin{align*}<ESC>o&<cr>=<cr>\end{align*}<ESC>2kO
+inoremap q \begin{align*}<ESC>o\end{align*}<ESC>O
+vnoremap q s\begin{align*}<ESC>o\end{align*}<ESC>O
 
 
 " math related shortcuts
