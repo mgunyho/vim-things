@@ -144,6 +144,10 @@ ia <buffer> lagrangian Lagrangian
 "ia <buffer> €quation equation "TODO
 ia <buffer> homogenous homogeneous
 ia <buffer> hermitian Hermitian
+ia <buffer> navier Navier
+ia <buffer> stokes Stokes
+ia <buffer> euclidean Euclidean
+ia <buffer> euclidian Euclidean
 
 ia <buffer> -> \rightarrow
 ia <buffer> <- \leftarrow
