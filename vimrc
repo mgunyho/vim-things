@@ -15,6 +15,7 @@ set t_vb=
 set modeline
 set encoding=utf-8
 set incsearch "Start searching before pressing enter (see also: sensible-vim)
+set shortmess-=S  "Show match position & count in status bar
 set timeoutlen=1000 ttimeoutlen=0
 set foldcolumn=1
 set scrolloff=5
