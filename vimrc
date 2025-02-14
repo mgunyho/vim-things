@@ -124,6 +124,11 @@ endif
 " capital ':Tabe' is like ':tabe' except that if  the file is already open in a tab, switch to that.
 command -nargs=* -complete=file Tabe tab drop <args>
 
+
+" Map ctrl+c to "copy to OS buffer" in visual mode
+" from https://sharats.me/posts/automating-the-vim-workpl
+xnoremap <C-c> "+y
+
 """""""""""
 " PLUGINS "
 """""""""""
