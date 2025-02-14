@@ -128,6 +128,12 @@ command -nargs=* -complete=file Tabe tab drop <args>
 " Map ctrl+c to "copy to OS buffer" in visual mode
 " from https://sharats.me/posts/automating-the-vim-workpl
 xnoremap <C-c> "+y
+if !has("clipboard")
+  " also make it work on wayland
+  " from https://old.reddit.com/r/Fedora/comments/ax9p9t/vim_and_system_clipboard_under_wayland/
+  xnoremap "+y y:call system("wl-copy", @")<cr>
+  xnoremap <C-c> y:call system("wl-copy", @")<cr>
+endif
 
 """""""""""
 " PLUGINS "
