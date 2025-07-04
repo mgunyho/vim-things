@@ -180,4 +180,6 @@ au InsertLeave * match TrailingWhitespace /\s\+$/
 
 " Abbreviations are defined in a separate file. NOTE: disabled
 " 'AutoCloseExpandSpace' from AutoClose.vim.
-source ~/.vim/abbrev.vim
+"source ~/.vim/abbrev.vim
+let $abbrevpath = expand('%:p:h') . '/abbrev.vim'
+source $abbrevpath
