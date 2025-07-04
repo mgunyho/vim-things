@@ -181,5 +181,6 @@ au InsertLeave * match TrailingWhitespace /\s\+$/
 " Abbreviations are defined in a separate file. NOTE: disabled
 " 'AutoCloseExpandSpace' from AutoClose.vim.
 "source ~/.vim/abbrev.vim
-let $abbrevpath = expand('<sfile>:p:h') . '/abbrev.vim'
+" https://stackoverflow.com/questions/4976776/how-to-get-path-to-the-current-vimscript-being-executed
+let $abbrevpath = fnamemodify(resolve(expand('<sfile>:p')), ':h') . '/abbrev.vim'
 source $abbrevpath
